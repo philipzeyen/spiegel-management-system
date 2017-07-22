@@ -1,0 +1,98 @@
+.nav-sidebar {
+    .panel {
+        .panel-body {
+            .table {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .panel-heading {
+        cursor: pointer;
+        a {
+            text-decoration: none;
+        }
+    }
+    tr {
+        cursor: pointer;
+        &.active {
+            td {
+                background-color: $navbar-default-bg !important;
+                a {
+                    color: $body-bg !important;
+                }
+            }
+        }
+        
+        &:hover {
+            td {
+                background-color: $brand-primary !important;
+                a {
+                    color: $body-bg !important;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.form-group {
+  .input-group {
+    .input-group-addon {
+      top: 0;
+    }
+  }
+}
+
+.alert {
+  .glyphicon, div, ul{
+    display:table-cell;
+  }
+
+  ul {
+    padding-left: 30px;
+  }
+}
+
+.navbar {
+  a.dropdown-toggle, .navbar-brand {
+    color: $body-bg !important;
+  }
+  .nav > li > a{
+    color: $body-bg !important;
+  }
+}
+.my-list-inline {
+  margin:5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+
+  @media screen and (max-width: 475px) {
+    flex-direction: column;
+    .buttons {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: row;
+      width: 100%;
+    }
+  }
+}
+
+body {
+  min-width: 385px;
+}
+
+hr {
+  border-color: #aaa;
+}
+
+.masken_canvas {
+    border: red 1px solid;
+    
+    &:hover {
+        cursor: pointer;
+    }
+}
